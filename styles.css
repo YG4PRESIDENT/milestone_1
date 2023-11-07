@@ -1,0 +1,74 @@
+/* styles.css in the 'public' directory */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+#playButton, #sendButton {
+    background-color: #008cba;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#playButton:hover, #sendButton:hover {
+    background-color: #005f73;
+}
+#audioPlayer {
+    width: 100%;
+    margin-top: 10px;
+}
+#chat {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+#messages {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #eee;
+    margin-bottom: 10px;
+}
+#messageInput {
+    padding: 10px;
+    width: calc(100% - 22px); /* Input padding and border */
+    margin-bottom: 10px;
+}
+.own-message {
+    background-color: #dcf8c6;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    text-align: right;
+}
+.other-message {
+    background-color: #e5e5ea;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    margin-left: 8px;
+    color: #888;
+}
+
+.typing-indicator {
+    font-style: italic;
+    color: #888;
+}
